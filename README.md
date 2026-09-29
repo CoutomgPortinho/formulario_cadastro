@@ -47,51 +47,6 @@ CREATE TABLE IF NOT EXISTS produtos (
 
 * **MySQL / MariaDB** — Armazenamento dos dados.
 
-* **HTML5 & CSS3** — Interface e formulário do usuário.
+* **HTML5 — Interface e formulário do usuário.
 
-## 📂 Estrutura do Projeto
 
-```
-.
-├── config.php          # Arquivo com as configurações de conexão PDO/MySQLi
-├── index.php           # Formulário HTML e lógica PHP de validação/inserção
-├── 10a_desafio2.md     # Instruções originais do desafio
-└── README.md           # Documentação do projeto
-
-```
-
-## 🚀 Como Executar o Projeto
-
-1. **Clone este repositório** na pasta de projetos do seu servidor web (ex: `htdocs` no XAMPP ou `www` no WAMP):
-
-   ```
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   
-   ```
-
-2. **Inicie os serviços do servidor local** (Apache e MySQL).
-
-3. **Crie a tabela no Banco de Dados**:
-
-   * Acesse o phpMyAdmin (`http://localhost/phpmyadmin`) ou o terminal do MySQL.
-
-   * Execute o script contido na seção [Estrutura do Banco de Dados](#-estrutura-do-banco-de-dados).
-
-4. **Acesse a aplicação no seu navegador**:
-
-   ```
-   http://localhost/nome-do-repositorio/index.php
-   
-   ```
-
-## 🧪 Regras de Validação Demonstradas
-
-| **Cenário** | **Entrada (Nome / Preço)** | **Resultado Esperado** | 
-| **Campos Vazios** | `""` / `""` | `Erro: Preencha todos os campos.` | 
-| **Preço Inválido** | `"Teclado"` / `-15.00` | `Erro: O preço deve ser um número positivo.` | 
-| **Preço Zero** | `"Mouse"` / `0.00` | `Erro: O preço deve ser um número positivo.` | 
-| **Cadastro Válido** | `"Monitor 24"` / `799.90` | `Produto cadastrado com sucesso!` | 
-
-## 📝 Licença
-
-Este projeto é fruto de um exercício prático para estudo de PHP e Banco de Dados. Sinta-se à vontade para reutilizar ou aprimorar a solução.
